@@ -1,0 +1,41 @@
+{
+  "name": "packlink/middleware",
+  "description": "Packlink middleware library for cloud based integrations.",
+  "type": "library",
+  "require": {
+    "php": "7.4.*",
+    "ext-json": "*",
+    "packlink/integration-core": "3.3.8",
+    "iio/libmergepdf": "^4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.7",
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Packlink\\Middleware\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Packlink\\Middleware\\Tests\\": "tests/",
+      "Logeecom\\Tests\\": "vendor/packlink/integration-core/tests/"
+    }
+  },
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Packlink Shipping S.L.",
+      "email": "support@packlink.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "no-api": true,
+      "url": "git@github.com:packlink-dev/ecommerce_module_core.git"
+    }
+  ]
+}
